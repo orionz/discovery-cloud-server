@@ -122,5 +122,5 @@ class DiscoveryCloudServer {
   }
 }
 
-const server = new DiscoveryCloudServer()
+const server = new DiscoveryCloudServer({ port: process.env.PORT })
 server.listen()
