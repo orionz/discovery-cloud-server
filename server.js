@@ -63,25 +63,20 @@ class DiscoveryCloudServer {
     let tag2 = crypto.randomBytes(2).toString("hex")
 
     ws1.on("message", data => {
-      log("pipe", tag1, data)
       if (ws2.readyState === WebSocket.OPEN) {
         ws2.send(data)
       } else {
-//        log("target socket closed - end of line")
         ws1.close()
       }
     })
     ws2.on("message", data => {
-      log("pipe", tag2, data)
       if (ws1.readyState === WebSocket.OPEN) {
         ws1.send(data)
       } else {
-//        log("target socket closed - end of line")
         ws2.close()
       }
     })
     const cleanup = () => {
-      log("cleaning up joined pipes", tag1, tag2)
       ws1.close()
       ws2.close()
     }
