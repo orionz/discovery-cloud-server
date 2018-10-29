@@ -10,3 +10,15 @@ discovery swarm to get fixed built this as a replacement.  This is the server
 portion of the project that will allow peers to find each other via disvoery
 keys and get piped websockets to each other created.
 
+This app is intended to be deployable to heroku out of the box and require no
+configuration.  By its design it should only ever run with a single dyno as
+there's no backplane for processes to communicate with each other.
+
+### Client code 
+
+[ coming soon ]
+
+### LICENSE 
+
+MIT
+
