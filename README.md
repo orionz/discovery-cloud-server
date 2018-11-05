@@ -16,7 +16,7 @@ there's no backplane for processes to communicate with each other.
 
 ### Client code 
 
-[ coming soon ]
+https://github.com/orionz/discovery-cloud-client
 
 ### LICENSE 
 
