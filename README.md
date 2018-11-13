@@ -18,6 +18,17 @@ there's no backplane for processes to communicate with each other.
 
 https://github.com/orionz/discovery-cloud-client
 
+### Setup
+
+The code should work as a heroku app out of the box with no extra setup.
+
+```
+  $ heroku create
+  Creating app... done, ⬢ fish-monger-9999
+  https://fish-monger-9999.herokuapp.com/ | https://git.heroku.com/fish-monger-9999.git
+  $ git push heroku master
+```
+
 ### LICENSE 
 
 MIT
